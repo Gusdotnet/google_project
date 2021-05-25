@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Google</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <style>
+    html{
+        min-height: 100%;
+        min-width: 100%;
+        margin: auto;
+    }
+    body{
+        background-color: white;
+        margin: auto;
+        overflow: hidden;
+        height: 100%;
+        width: 100%;
+    }
+    .footer{
+        background-color: #f2f2f2;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding-top: 50px;
+        font-family: Poppins;
+        font-size: small;
+    }
+    .header{
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        font-family: Poppins;
+        font-size: small;
+        }
+    a+a{
+        margin-left: 10px;
+    }
+    .headerright{
+        float: right;
+        font-size: small;
+        color: black;
+        cursor: pointer;
+        top: 10px;
+        right: 110px;
+        position: absolute;
+        }
+    .headerright a:link{
+        text-decoration: none;
+        color: black;
+        }
+    .headerright a:hover{
+        text-decoration: underline;
+        }
+    .headerright a:visited{
+        color: black;
+        }
+    .signbutton{
+        background-color:#0066ff;
+        float:right;
+        font-family: Poppins;
+        font-size: small;
+        color: white;
+        border:none;
+        border-radius: 4px;
+        transition-duration: 0.5s;
+        cursor:pointer;
+        padding: 10px;
+        right: 10px;
+        top: 10px;
+        position: absolute;
+    }
+    .signbutton:hover{
+        background-color: #2f82ff;
+    }
+    .footerleft{
+            float: left;
+            font-size: small;
+            color:#929292;
+            cursor:pointer;
+            left: 15px;
+            bottom: 15px;
+            position: absolute;
+        }
+    .footerleft a:link{
+            text-decoration: none;
+            color:#929292;
+        }
+    .footerleft a:hover{
+            text-decoration: underline;
+        }
+    .footerleft a:visited{
+            color:#929292;
+        }
+    .footerright{
+            float: right;
+            font-size: small;
+            color:#929292;
+            cursor:pointer;
+            right: 15px;
+            bottom: 15px;
+            position: absolute;
+        }
+    .footerright a:link{
+            text-decoration: none;
+            color:#929292;
+        }
+    .footerright a:hover{
+            text-decoration: underline;
+        }
+    .footerright a:visited{
+            color:#929292;
+        }
+    .mainbuttonone{
+        background-color: #faf8f8;
+        font-family: Poppins;
+        font-size: 15px;
+        border-radius: 4px;
+        padding: 0;
+        border: none;
+        text-align: center;
+        height: 30px;
+        width: 140px;
+        transition-duration: 0.5s;
+        cursor:pointer;
+        top: 438px;
+        left: 41%;
+        position: fixed;
+    }
+    .mainbuttonone:hover{
+        background-color: #dbdbdb;
+        border: black;
+    }
+    .mainbuttontwo{
+        background-color: #faf8f8;
+        font-family: Poppins;
+        font-size: 15px;
+        border-radius: 4px;
+        padding: 0;
+        border: none;
+        text-align: center;
+        height: 30px;
+        width: 140px;
+        transition-duration: 0.5s;
+        cursor:pointer;
+        top: 438px;
+        left: 50%;
+        position: fixed;
+    }
+    .mainbuttontwo:hover{
+        background-color: #dbdbdb;
+        border: black;
+    }
+    #googlogo{
+        text-align: center;
+        position: fixed;
+        top: 260px; 
+        left: 41%;
+    }
+    #search{
+       border-radius: 50px;
+       cursor: text;
+       top: 370px;
+       left: 33%;
+       width: 525px;
+       height: 40px;
+       border: 1px solid #dbdbdb;
+       position: fixed;
+   }
+   #searchlogo{
+        position:absolute;
+        left:34%; 
+        top:381px; 
+        z-index:1; 
+        color:gainsboro;
+   }
+   #mic{
+        cursor:pointer;
+        position:absolute; 
+        left:62%;
+        top:381px;
+        color:gainsboro;
+   }
+   #mic:hover{
+        display: ruby;
+   }
+   #apps{
+        color:rgb(136, 134, 134); 
+        cursor:pointer; 
+        float:right; 
+        padding-left: 10px; 
+        padding-right: 10px;
+        top: 10px;
+        right: 70px;
+        position: absolute;
+   }
+   #apps:hover{
+       background-color: #ece9e9;
+       border-radius: 50%;
+    }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+            <button class="signbutton" type="submit">Sign in</button>
+            <span class="material-icons" id="apps">apps</span>
+            <div class="headerright">
+                <a href="https://google.com">Gmail</a>
+                <a href="https://www.google.com.br/imghp?hl=en&authuser=0&ogbl">Images</a>
+            </div>
+    </div>
+    <div id="googlogo">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo" style="height:auto; width:auto;">
+    </div>
+    <div class=button-holder>
+    <span class="material-icons" id=searchlogo>search</span>
+    <input type="text" class="container" id="search">
+    <span class="material-icons" id="mic">mic</span>
+    </div>
+    <div>
+        <button class="mainbuttonone" type="submit">Google Search</button>
+        <button class="mainbuttontwo" type="submit">I'm feeling lucky</button>
+    </div>
+    <div class="footer">
+        <div class="footerleft">
+            <a href="https://about.google/">About</a>
+            <a href="https://ads.google.com/home/">Advertising</a>
+            <a href="https://smallbusiness.withgoogle.com/news/#!/">Bussiness</a>
+            <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
+        </div>
+        <div class="footerright">
+            <a href="https://policies.google.com/privacy?hl=en">Privacy</a>
+            <a href="https://policies.google.com/terms?hl=en">Terms</a>
+            <a href="https://support.google.com/websearch/answer/2539428?co=GENIE.Platform%3DAndroid&hl=en">Settings</a>
+        </div>
+    </div>
+</body>
+</html>
